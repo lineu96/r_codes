@@ -3,6 +3,8 @@ load("dados.RData")
 
 X11()
 
+library(ggplot2)
+
 ggplot(df,aes(range,loglik))+
   
   geom_line(lwd = 2)+

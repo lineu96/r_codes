@@ -194,7 +194,7 @@ ggplot(data=table1, aes(x=reorder(Niveis, -Frequencia),
 
 ## Gráfico de barras para variável discreta
 table1 <- freq_n_ord(df$discreta)
-table1$Niveis <- as.numeric(table1$Niveis)
+table1$Niveis <- as.numeric(as.vector(table1$Niveis))
 
 ggplot(data=table1, aes(x=Niveis, 
                         y=Frequencia#, 
